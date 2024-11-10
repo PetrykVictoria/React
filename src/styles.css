@@ -1,0 +1,169 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f2f2f2, #c0e4f2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.add-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.add-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+.add-button:active {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+.dish-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dish-table th,
+.dish-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.dish-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.dish-table td {
+  background-color: #ffffff;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.dish-item button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+}
+
+.dish-item .edit-button {
+  background-color: #007bff;
+  color: white;
+  margin-right: 10px;
+}
+
+.dish-item .delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.dish-item button:hover {
+  opacity: 0.9;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+}
+
+.dish-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.dish-form input {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dish-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.dish-form button[type="button"] {
+  background-color: #dc3545;
+  margin-top: 5px;
+}
+
+.dish-form button:hover {
+  transform: scale(1.05);
+}
+
+.dish-form button:active {
+  transform: scale(0.95);
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
